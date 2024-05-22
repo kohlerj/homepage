@@ -1,0 +1,84 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Media:
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.local:8989
+        description: Series management
+        ping: sonarr.local
+        widget:
+          type: sonarr
+          url: http://sonarr.local:8989
+          key: 4e7189080014464698b2895d4c0c5200
+          enableQueue: true # optional, defaults to false
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.local:7878
+        description: Movie management
+        ping: radarr.local
+        widget:
+          type: radarr
+          url: http://radarr.local:7878
+          key: c8696e041eda4375b737e8e09af98fdb
+          enableQueue: true # optional, defaults to false
+    - Prowlarr:
+        icon: prowlarr.png
+        href: http://prowlarr.local:9696
+        description: Indexers management
+        ping: prowlarr.local
+        widget:
+          type: prowlarr
+          url: http://prowlarr.local:9696
+          key: 52bcb250a40846f0a4c817e9d385a1bc
+          enableQueue: true # optional, defaults to false
+    - Plex:
+        icon: plex.png
+        href: http://plex.local:32400
+        description: Watch movies and TV shows.
+        ping: plex.local
+        widget:
+            type: plex
+            url: http://plex.local:32400
+            key: zwsWYtbBrzdDvgGNSrJ7 # see https://www.plexopedia.com/plex-media-server/general/plex-token/
+    - Transmission:
+        icon: transmission.png
+        href: "http://transmission.local:9091"
+        description: Torrent client.
+        ping: transmission.local
+        widget:
+            type: transmission
+            url: http://transmission.local:9091
+            username: transmission
+            password: cycvAb-pydmi5-gepfik
+            rpcUrl: /transmission/ # Optional. Matches the value of "rpc-url" in your Transmission's settings.json file
+
+
+- Management:
+  - Proxmox:
+      icon: proxmox
+      href: http://192.168.163.193:8006/
+      description: Proxmox management
+      widget:
+          type: proxmox
+          url: https://192.168.163.193:8006
+          username: api@pam!homepage
+          password: 038b6fde-3010-4536-987e-425cae95086c
+  - pi-hole:
+      icon: pi-hole
+      href: http://pihole.local/admin
+      description: pi-hole admin interface
+      widget:
+        type: pihole
+        url: http://pihole.local
+        version: 5
+        key: 7aa6f33eb9b4a18e403652d23574c229329aefd30db5e5ad4849a702f92ee770 # optional
+    
+- Machines:
+  - voronJFK:
+      href: http://voronjfk.local
+      description: voronJFK
+      widget:
+        type: moonraker
+        url: http://voronjfk.local:7125

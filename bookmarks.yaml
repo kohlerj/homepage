@@ -1,0 +1,32 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Developer:
+    - Github:
+      - abbr: GH
+        href: https://github.com/
+
+- Voron: 
+  - Voron's Github:
+    - href: https://github.com/VoronDesign
+  - ERCF v2 Github:
+    - href: https://github.com/Enraged-Rabbit-Community/ERCF_v2
+  - Voron @ Printables:
+    - href: https://www.printables.com/model?category=137&o=liked&period=all-time
+
+
+- Entertainment:
+  - YouTube:
+    - abbr: YT
+      href: https://youtube.com/
+  - invidious:
+    - href: http://runtipi.local:8095/
+
+- Homeserver: 
+  - Grafana:
+    - href: http://grafana.local:3000/?orgId=1
+  - TasmoAdmin: 
+    - href: http://tasmoadmin.local:9999/devices
+
+		
